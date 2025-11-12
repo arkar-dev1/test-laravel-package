@@ -1,0 +1,43 @@
+{
+    "name": "cubepasses/axess",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "arkar-dev1",
+            "email": "arkar@cubepasses.com",
+            "homepage": "https://github.com/arkar-dev1"
+        }
+    ],
+    "homepage": "https://github.com/cubepasses/axess",
+    "keywords": ["Laravel", "Axess"],
+    "require": {
+        "illuminate/support": "^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7",
+        "laravel/pint": "^1.13",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cubepasses\\Axess\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cubepasses\\Axess\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cubepasses\\Axess\\AxessServiceProvider"
+            ],
+            "aliases": {
+                "Axess": "Cubepasses\\Axess\\Facades\\Axess"
+            }
+        }
+    }
+}
